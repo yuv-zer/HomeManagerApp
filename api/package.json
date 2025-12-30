@@ -1,0 +1,8 @@
+{
+  "name": "homemanager-api",
+  "version": "1.0.0",
+  "description": "Azure Functions backend for HomeManager",
+  "dependencies": {
+    "tedious": "^16.0.0"
+  }
+}
