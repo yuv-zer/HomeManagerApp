@@ -1,6 +1,10 @@
 {
   "routes": [
     {
+      "route": "/.auth/login/custom/googleoidc/callback",
+      "allowedRoles": ["anonymous"]
+    },
+    {
       "route": "/*",
       "allowedRoles": ["authenticated"]
     }
