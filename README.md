@@ -33,4 +33,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
+**Run locally (short):** Add `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` to a `.env` or set them in your shell, register `http://localhost:4280/.auth/login/google/callback` in Google OAuth, then run:
+
+```powershell
+npm run dev
+swa start http://localhost:3000 --api-location ./api --port 4280
+```
+
+Open `http://localhost:4280/.auth/login/google` to test.
+
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
