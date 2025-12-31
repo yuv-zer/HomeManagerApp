@@ -11,6 +11,12 @@ export default function Home() {
       .catch((err) => console.error("Error fetching:", err));
   }, []);
 
+  interface Expense {
+    id: number;
+    description: string;
+    amount: number;
+  }
+
   return (
     <main className="p-8">
       <h1 className="text-2xl font-bold mb-4">ניהול הוצאות הבית</h1>
@@ -19,7 +25,7 @@ export default function Home() {
           <p>אין נתונים להצגה או שטוען...</p>
         ) : (
           <ul className="divide-y">
-            {expenses.map((exp: any) => (
+           {expenses.map((exp: Expense) => (
               <li key={exp.id} className="py-2">
                 {exp.description} - {exp.amount}₪
               </li>
